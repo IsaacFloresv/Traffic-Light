@@ -13,15 +13,15 @@ const Home = () => {
       <div className="traffic-light">
         <div
           className={color === "red" ? "light red glow" : "light red"}
-          onClick={() => setColor(color ==="" ? "red" : "")}
+          onClick={() => setColor(color !== "red" ? "red": (color ==="" ? "red" : ""))}
         ></div>
         <div
           className={color === "yellow" ? "light yellow glow" : "light yellow"}
-          onClick={() => setColor(color ==="" ? "yellow" : "")}
+          onClick={() => setColor(color !== "yellow" ? "yellow":(color ==="" ? "yellow" : ""))}
         ></div>
         <div
           className={color === "green" ? "light green glow" : "light green"}
-          onClick={() => setColor(color ==="" ? "green" : "")}
+          onClick={() => setColor(color !== "green" ? "green":(color ==="" ? "green" : ""))}
         ></div>
       </div>
     </div>
